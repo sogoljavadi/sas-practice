@@ -1,0 +1,122 @@
+
+/*global sass*/
+
+$myfont:Vazir-FD;
+$myfontsize:12px;
+$mycolor:#fff;
+$myWidth: 100%;
+$marg:0px;
+$max1200:1200px;
+$bgblock:rgba(255, 0, 0, 0.5);
+$bgheader: #ff0000;
+$normal:normal;
+
+/* end of global sass*/
+
+@font-face {
+  font-family: $myfont;
+  src: url('../Fonts/Vazir-FD.eot');
+  src: url('../Fonts/Vazir-FD.eot?#iefix') format('embedded-opentype'),
+       url('../Fonts/Vazir-FD.woff2') format('woff2'),
+       url('../Fonts/Vazir-FD.woff') format('woff'),
+       url('../Fonts/Vazir-FD.ttf') format('truetype');
+  font-weight: $normal;
+  font-style: $normal;
+}
+@font-face {
+  font-family: $myfont;
+  src: url('../Fonts/Vazir-Bold-FD.eot');
+  src: url('../Fonts/Vazir-Bold-FD.eot?#iefix') format('embedded-opentype'),
+       url('../Fonts/Vazir-Bold-FD.woff2') format('woff2'),
+       url('../Fonts/Vazir-Bold-FD.woff') format('woff'),
+       url('../Fonts/Vazir-Bold-FD.ttf') format('truetype');
+  font-weight: bold;
+  font-style: $normal;
+}
+
+
+
+html , body {
+  font-family:$myfont;
+    margin:$marg;
+  font-size: $myfontsize;
+ }
+ h1,h2,h3,h4,h5,h6{
+  font-family: $myfont;
+  font-weight: $normal;
+  margin: $marg;
+}
+.container {
+  max-width: $myWidth;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+*, ::before, ::after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.main-wrapper {
+  max-width: $max1200;
+  margin: $marg auto;
+  padding: 0 8px;
+}
+
+.img_model {
+  width: 50%;
+  position: relative;
+  font-family:$myfont ;
+}
+.text-block {
+  bottom: 2px;
+  background-color:$bgblock;
+  color: $mycolor;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: $myWidth;
+}
+
+.tittle{
+text-decoration: none;
+color:$mycolor;
+font-size: $myfontsize;
+}
+.header_img{
+  width: 50%;
+  background-color: $bgheader;
+}
+.header_icon{
+  float: right;
+  color:$mycolor;
+}
+.glob-head{
+  margin:6px 8px;
+}
+.camera{
+  padding: 7px;  
+
+}
+.headertxt{
+ color:$mycolor;
+ padding: 8px;  
+ background-color: $bgheader;
+
+}
+@media screen and (min-width: 540px)  {
+
+  .text-block {
+    position: absolute;
+    bottom: 2px;
+    background-color:$bgblock;
+    color: $mycolor;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: $myWidth;
+  }
+
+}

@@ -1,0 +1,119 @@
+/*global sass*/
+/* end of global sass*/
+@font-face {
+  font-family: Vazir-FD;
+  src: url("../Fonts/Vazir-Bold-FD.eot");
+  src: url("../Fonts/Vazir-FD.eot?#iefix") format("embedded-opentype"), url("../Fonts/Vazir-FD.woff2") format("woff2"), url("../Fonts/Vazir-FD.woff") format("woff"), url("../Fonts/Vazir-FD.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: Vazir-FD;
+  src: url("../Fonts/Vazir-Bold-FD.eot");
+  src: url("../Fonts/Vazir-Bold-FD.eot?#iefix") format("embedded-opentype"), url("../Fonts/Vazir-Bold-FD.woff2") format("woff2"), url("../Fonts/Vazir-Bold-FD.woff") format("woff"), url("../Fonts/Vazir-Bold-FD.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+html, body {
+  font-family: Vazir-FD;
+  margin: 0px;
+  font-size: 12px; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Vazir-FD;
+  font-weight: normal;
+  margin: 0px; }
+
+.container {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+
+.container::after {
+  content: " ";
+  display: block;
+  clear: both; }
+
+*, ::before, ::after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+.main_ul {
+  background: #fff;
+  list-style: none;
+  margin: 0;
+  float: right;
+  width: 100%;
+  padding: 0;
+  text-align: center; }
+
+.main_ul li {
+  color: #fff;
+  background: #fff;
+  display: block;
+  padding: 1rem;
+  position: relative;
+  text-decoration: none;
+  transition-duration: 0.5s;
+  border-bottom: solid 1px #80808033; }
+
+@media screen and (min-width: 540px) {
+  .main_ul li {
+    color: #fff;
+    background: #f2f4f1;
+    display: block;
+    float: right;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+    border-bottom: solid 1px #80808033; } }
+.main_ul li a {
+  color: #000; }
+
+.main_ul li:hover {
+  background: #023b82;
+  cursor: pointer;
+  color: #fff; }
+
+.main_ul li a:hover {
+  cursor: pointer;
+  color: #fff; }
+
+.main_ul li ul {
+  background: #f2f4f1;
+  visibility: hidden;
+  min-width: 20rem;
+  position: absolute;
+  margin-top: 1rem;
+  display: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 10px; }
+
+.main_ul li:hover > ul,
+ul li {
+  visibility: visible;
+  opacity: 1;
+  display: block; }
+
+.main_ul li ul li {
+  clear: both;
+  width: 100%; }
+
+.main_ul li ul li:hover {
+  background: #bbbbbb;
+  cursor: pointer; }
+
+ul li:hover {
+  background: #bbbbbb;
+  cursor: pointer;
+  color: #000; }
+
+.arrows {
+  float: left;
+  padding: 2px; }
+
+/*# sourceMappingURL=menu.css.map */
